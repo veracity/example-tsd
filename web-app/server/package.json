@@ -1,0 +1,28 @@
+{
+  "name": "veracity-node-spa-server",
+  "version": "1.0.0",
+  "description": "The server side code for Veracity Single-Page-Application",
+  "main": "start.js",
+  "scripts": {
+    "build": "npx rimraf ../dist/server && node ./scripts/build.js"
+  },
+  "keywords": [],
+  "author": "DNV GL",
+  "license": "ISC",
+  "dependencies": {
+    "@veracity/node-auth": "0.1.0-beta",
+    "azure-storage": "^2.10.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "node-forge": "^0.8.2",
+    "passport": "^0.4.0",
+    "passport-azure-ad": "^4.0.0",
+    "request-promise-native": "^1.0.7",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "rimraf": "^2.6.3"
+  }
+}

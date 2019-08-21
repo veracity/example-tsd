@@ -1,0 +1,11 @@
+{
+	"eslint.autoFixOnSave": true,
+	"eslint.enable": true,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/dist/client": true,
+		"**/.cache": true
+	},
+	"appService.showBuildDuringDeployPrompt": false
+}

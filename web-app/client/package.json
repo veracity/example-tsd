@@ -1,0 +1,47 @@
+{
+  "name": "veracity-node-spa-client",
+  "version": "1.0.0",
+  "description": "The client side code for Veracity Single-Page-Application",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rimraf ../dist/client && npx parcel build ./src/index.html --out-dir ../dist/client",
+    "start": "rimraf ./cache && rimraf ../dist/client && parcel ./src/index.html --https --port 3010 --hmr-port 3011 --out-dir ../dist/client"
+  },
+  "keywords": [],
+  "author": "DNV GL",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
+    "core-js": "^3.0.1",
+    "lodash": "^4.17.14",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-google-maps": "^9.4.5",
+    "react-node": "^1.0.2",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "prop-types": "^15.7.2",
+    "rimraf": "^2.6.3",
+    "sass": "^1.20.1"
+  }
+}
